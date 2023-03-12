@@ -1,20 +1,18 @@
 function test() {
-  const result1 = getFibonacci(2);
-  console.log(result1); // should output [1, 1]
+  const equals = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 
-  // Test 2
-  const result2 = getFibonacci(5);
-  console.log(result2); // should output [1, 1, 2, 3, 5]
-
-  // Test 3
-  const result3 = getFibonacci();
-  console.log(result3); // should output "not allowed"
-
-  // Test 4
-  const result4 = getFibonacci(-1);
-  console.log(result4); // should output "not allowed"
-
-  // Test 5
-  const result5 = getFibonacci(11);
-  console.log(result5); // should output "not allowed"
+  console.log(
+    equals(getFibonacci(5), [1, 1, 2, 3, 5]) ? " Passed " : " Failed "
+  );
+  console.log(equals(getFibonacci(2), [1, 1]) ? " Passed " : " Failed ");
+  console.log(
+    equals(getFibonacci("abcd"), "not allowed") ? " Passed " : " Failed "
+  );
+  console.log(
+    equals(getFibonacci(20), "not allowed") ? " Passed " : " Failed "
+  );
+  console.log(
+    equals(getFibonacci(-10), "not allowed") ? " Passed " : " Failed "
+  );
 }
+test();
