@@ -49,7 +49,7 @@ var app = new Vue({
             parseInt(bits[1].data) +
             parseInt(bits[3].data)
         );
-        console.log("Biti: " + c1 + "," + c2 + "," + c4);
+        console.log("Biti control sunt: " + c1 + "," + c2 + "," + c4);
         return [
           c1,
           c2,
@@ -86,7 +86,9 @@ var app = new Vue({
             parseInt(bits[4].data) +
             parseInt(bits[6].data)
         );
-        console.log("Biti: " + c1 + "," + c2 + "," + c4 + "," + c8);
+        console.log(
+          "Biti control sunt: " + c1 + "," + c2 + "," + c4 + "," + c8
+        );
         return [
           c1,
           c2,
