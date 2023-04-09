@@ -1,1 +1,1 @@
-# Laborator 1 TD
+# Laboratoare TD
