@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 100px;
   margin-left: 100px;
 }
@@ -32,7 +32,7 @@ input:focus {
 }
 
 .invalid-input {
-  border: 2px solid #ffc400;
+  border: 2px solid #ee0909;
   -webkit-transition: all 1000ms linear;
   -ms-transition: all 1000ms linear;
   transition: all 1000ms linear;
